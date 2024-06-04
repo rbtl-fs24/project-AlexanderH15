@@ -13,21 +13,13 @@
 - ORCID iD
 - Email: huessya@student.ethz.ch
 
-**Author B**
 
-- First name:
-- Surname:
-- ORCID iD
-- Email:
+3.  Date of data collection: 2024-05-24
 
-etc.
-
-3.  Date of data collection (single date, range, approximate date):
-
-4.  Geographic location of data collection:
+4.  Geographic location of data collection: Ebmatingen, Binz, Pfaffhausen, Witikon (Zürich, Switzerland)
 
 5.  Information about funding sources that supported the collection of
-    the data: 
+    the data: Personal funding
 
 ## Sharing / access information
 
@@ -45,19 +37,19 @@ Recommended: This work is licensed under the Creative Commons Attribution 4.0 In
 
 ## Methodological information
 
-1.  Description of methods used for collection/generation of data:
+1.  Description of methods used for collection/generation of data: Picking up the littered waste and measuring the weight with a kitchen scale
 
-2.  Methods for processing the data:
+2.  Methods for processing the data: with R
 
 3.  Instrument- or software-specific information needed to interpret the
     data: 
 
 4.  Standards and calibration information, if appropriate: -
 
-5.  Environmental/experimental conditions: 
+5.  Environmental/experimental conditions: recent rain
 
 6.  Describe any quality-assurance procedures performed on the data: 
 
 7.  People involved with sample collection, processing, analysis and/or
-    submission:
+    submission: 
 

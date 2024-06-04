@@ -1,0 +1,22 @@
+id,location,date,distance_m,notes,waste_category,mass,amount
+1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,paper,1480.769230769231,519.2307692307693
+1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,plastic,442.30769230769226,96.15384615384616
+1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,glass,0,0
+1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,metal,615.3846153846155,173.07692307692307
+1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,organic,1923.076923076923,19.230769230769234
+1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,textile,0,0
+1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,zig,173.07692307692307,173.07692307692307
+2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,paper,500,114.28571428571428
+2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,plastic,557.1428571428571,85.71428571428571
+2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,glass,0,0
+2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,metal,542.8571428571428,71.42857142857143
+2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,organic,0,0
+2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,textile,0,0
+2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,zig,128.57142857142856,171.42857142857142
+3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,paper,628.7878787878788,75.75757575757576
+3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,plastic,53.03030303030303,30.303030303030305
+3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,glass,0,0
+3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,metal,151.51515151515153,22.727272727272727
+3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,organic,0,0
+3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,textile,0,0
+3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,zig,121.21212121212122,128.78787878787878

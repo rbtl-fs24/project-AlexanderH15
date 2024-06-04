@@ -1,0 +1,134 @@
+---
+title: "How does littered trash differ in amount and composition, when being picked up from the greeneries next to a rural road in the same day, comparing three sections with different vicinities to the city?"
+date: today
+author:
+  - name: Alexander Hüssy
+    orcid: 0009-0007-7656-117X
+    email: huessya@ethz.ch
+    affiliation: 
+      - name: ETH Zurich
+        url: https://ethz.ch/de.html
+#format: html
+output: 
+  html_document:
+    toc: true
+    number_sections: true
+editor: visual
+bibliography: references.bib
+---
+
+```{r}
+#| label: load-packages
+
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(ggthemes)
+library(ggridges)
+library(gt)
+```
+
+# Introduction
+
+adfa
+
+# Methods
+
+adfasd
+
+```{r}
+#| label: tbl-streets
+#| tbl-cap: An overview of the collected litter per km from the different streets
+
+loc2 <- read_csv(here::here("data/final/location_overview.csv"),show_col_types = FALSE)
+
+loc2 |> 
+  group_by(street,length,notes) |> 
+  summarise(mean_mass = mean(mass),
+            mean_amount = mean(amount),
+            .groups = 'drop') |> 
+  gt() |> 
+  fmt_number(columns = c(mean_mass, mean_amount),
+             decimals = 0) |> 
+   cols_label(
+    length = "length [m]",
+    mean_mass = "Mean Total Mass [g/km]",
+    mean_amount = "Mean Total Amount [#/km]"
+  )
+
+
+```
+
+# Results
+
+asdfasd
+
+```{r}
+#| fig-cap: Comparison of different Sections of the same Street
+#| label: fig-sectionsA
+
+sec_z <- read_csv(here::here("data/final/section_comparison.csv"),show_col_types = FALSE)
+
+ggplot(data = sec_z, mapping = aes(x = location, 
+                                     y = mass, 
+                                   fill = waste_category)) + 
+  geom_bar(stat = "identity") + 
+  scale_color_colorblind() +
+  labs(title = "Mass comparison of different Sections", x = "Street Section", y = "Mass [g/km]", fill = "Waste Categories")
+
+```
+
+```{r}
+#| fig-cap: Comparison of different Sections of the same Street
+#| label: fig-sections_B
+
+
+ggplot(data = sec_z, mapping = aes(x = location, 
+                                     y = amount, 
+                                   fill = waste_category)) + 
+  geom_bar(stat = "identity") + 
+  scale_color_colorblind() +
+  labs(title = "Amount comparison of different Sections", x = "Street Section", y = "Amount [#/km]", fill = "Waste Categories")
+
+```
+
+```{r}
+#| fig-cap: Comparison of different Streets
+#| label: fig-streets_A
+
+litter_mean <- read_csv(here::here("data/final/total_analysis.csv"),show_col_types = FALSE)
+
+ggplot(data = litter_mean, mapping = aes(x = street, 
+                                   y = mean_mass, 
+                                   fill = waste_category)) + 
+  geom_bar(stat = "identity") + 
+  scale_color_colorblind() +
+  labs(title = "Mass comparison of different Streets", x = "Street", y = "Mass [g/km]", fill = "Waste Categories")
+
+```
+
+```{r}
+#| fig-cap: Comparison of different Streets
+#| label: fig-streets_B
+
+ggplot(data = litter_mean, mapping = aes(x = street, 
+                                   y = mean_amount, 
+                                   fill = waste_category)) + 
+  geom_bar(stat = "identity") + 
+  scale_color_colorblind() +
+  labs(title = "Amount comparison of different Streets", x = "Street", y = "Amount [#/km]", fill = "Waste Categories")
+
+```
+
+# Conclusions
+
+adsfa
+
+# References
+
+adsfsd
+
+```{r}
+
+
+```

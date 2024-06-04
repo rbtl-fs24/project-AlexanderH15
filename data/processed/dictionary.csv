@@ -1,0 +1,9 @@
+variable_name,description
+id,collection id
+location,street section
+distance,lenght of street section
+date,date of collection
+notes,information; which might influence the data interpretation
+waste_category,material of individual pieces
+mass,mass of individual pieces
+amount,number of individual pieces

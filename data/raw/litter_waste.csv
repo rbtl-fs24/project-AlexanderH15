@@ -1,0 +1,8 @@
+id,location,date,distance_m,notes,paper_m_g,paper_n,plastic_m_g,plastic_n,glass_m_g,glass_n,metal_m_g,metal_n,organic_m_g,organic_n,textile_m_g,textile_n,zig_m_g,zig_n,total_m_g,total_n,total_m_g_measured
+1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,77,27,23,5,0,0,32,9,100,1,0,0,9,9,241,51,265
+2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,35,8,39,6,0,0,38,5,0,0,0,0,9,12,121,31,184
+3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,83,10,7,4,0,0,20,3,0,0,0,0,16,17,126,34,162
+4,Witikonstrasse1,2024-05-24T00:00:00Z,195,NA,34,18,76,21,169,1,66,11,0,0,0,0,6,22,351,73,397
+5,Witikonstrasse2,2024-05-24T00:00:00Z,156,NA,63,16,43,9,0,0,44,11,0,0,44,1,8,21,202,58,NA
+6,Witikonerstrasse1,2024-05-24T00:00:00Z,152,cut grass,73,21,18,8,0,0,64,7,0,0,190,2,39,70,384,108,399
+7,Witikonerstrasse2,2024-05-24T00:00:00Z,271,cut grass,98,23,160,23,0,0,180,11,0,0,174,3,79,134,691,194,782
