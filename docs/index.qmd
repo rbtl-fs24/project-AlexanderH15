@@ -127,3 +127,5 @@ ggplot(data = litter_mean, mapping = aes(x = street,
 -   Closeness to settlements usually entails more littering, but not necessarily closeness to major cities
 
 -   Trash in the green patches between streets need to be collected manually, perhaps with a system proposed by @powers1973positive
+
+# References
