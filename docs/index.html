@@ -152,15 +152,9 @@ div.csl-indent {
 
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressMessages</span>(<span class="fu">library</span>(tidyverse))</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#library(dplyr)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#library(readr)</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#library(ggplot2)</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#library(tidyr)</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#library(tibble)</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggridges)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#library(knitr)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggridges)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
@@ -193,23 +187,23 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
 <div aria-describedby="tbl-streets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <div>
-<div id="kufbgkawps" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kufbgkawps table {
+<div id="oroqpofzqe" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#oroqpofzqe table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kufbgkawps thead, #kufbgkawps tbody, #kufbgkawps tfoot, #kufbgkawps tr, #kufbgkawps td, #kufbgkawps th {
+#oroqpofzqe thead, #oroqpofzqe tbody, #oroqpofzqe tfoot, #oroqpofzqe tr, #oroqpofzqe td, #oroqpofzqe th {
   border-style: none;
 }
 
-#kufbgkawps p {
+#oroqpofzqe p {
   margin: 0;
   padding: 0;
 }
 
-#kufbgkawps .gt_table {
+#oroqpofzqe .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -235,12 +229,12 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-left-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_caption {
+#oroqpofzqe .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kufbgkawps .gt_title {
+#oroqpofzqe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -252,7 +246,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-bottom-width: 0;
 }
 
-#kufbgkawps .gt_subtitle {
+#oroqpofzqe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -264,7 +258,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-top-width: 0;
 }
 
-#kufbgkawps .gt_heading {
+#oroqpofzqe .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -276,13 +270,13 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-right-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_bottom_border {
+#oroqpofzqe .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_col_headings {
+#oroqpofzqe .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -297,7 +291,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-right-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_col_heading {
+#oroqpofzqe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -317,7 +311,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   overflow-x: hidden;
 }
 
-#kufbgkawps .gt_column_spanner_outer {
+#oroqpofzqe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -329,15 +323,15 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   padding-right: 4px;
 }
 
-#kufbgkawps .gt_column_spanner_outer:first-child {
+#oroqpofzqe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kufbgkawps .gt_column_spanner_outer:last-child {
+#oroqpofzqe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kufbgkawps .gt_column_spanner {
+#oroqpofzqe .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -349,11 +343,11 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   width: 100%;
 }
 
-#kufbgkawps .gt_spanner_row {
+#oroqpofzqe .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kufbgkawps .gt_group_heading {
+#oroqpofzqe .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -379,7 +373,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   text-align: left;
 }
 
-#kufbgkawps .gt_empty_group_heading {
+#oroqpofzqe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -394,15 +388,15 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   vertical-align: middle;
 }
 
-#kufbgkawps .gt_from_md > :first-child {
+#oroqpofzqe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kufbgkawps .gt_from_md > :last-child {
+#oroqpofzqe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kufbgkawps .gt_row {
+#oroqpofzqe .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -421,7 +415,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   overflow-x: hidden;
 }
 
-#kufbgkawps .gt_stub {
+#oroqpofzqe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -434,7 +428,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   padding-right: 5px;
 }
 
-#kufbgkawps .gt_stub_row_group {
+#oroqpofzqe .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -448,15 +442,15 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   vertical-align: top;
 }
 
-#kufbgkawps .gt_row_group_first td {
+#oroqpofzqe .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kufbgkawps .gt_row_group_first th {
+#oroqpofzqe .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kufbgkawps .gt_summary_row {
+#oroqpofzqe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -466,16 +460,16 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   padding-right: 5px;
 }
 
-#kufbgkawps .gt_first_summary_row {
+#oroqpofzqe .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_first_summary_row.thick {
+#oroqpofzqe .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kufbgkawps .gt_last_summary_row {
+#oroqpofzqe .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -485,7 +479,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-bottom-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_grand_summary_row {
+#oroqpofzqe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -495,7 +489,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   padding-right: 5px;
 }
 
-#kufbgkawps .gt_first_grand_summary_row {
+#oroqpofzqe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -505,7 +499,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-top-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_last_grand_summary_row_top {
+#oroqpofzqe .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -515,11 +509,11 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-bottom-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_striped {
+#oroqpofzqe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kufbgkawps .gt_table_body {
+#oroqpofzqe .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -528,7 +522,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-bottom-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_footnotes {
+#oroqpofzqe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -542,7 +536,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-right-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_footnote {
+#oroqpofzqe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -551,7 +545,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   padding-right: 5px;
 }
 
-#kufbgkawps .gt_sourcenotes {
+#oroqpofzqe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -565,7 +559,7 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   border-right-color: #D3D3D3;
 }
 
-#kufbgkawps .gt_sourcenote {
+#oroqpofzqe .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -573,63 +567,63 @@ Table&nbsp;1: An overview of the collected litter per km from the different stre
   padding-right: 5px;
 }
 
-#kufbgkawps .gt_left {
+#oroqpofzqe .gt_left {
   text-align: left;
 }
 
-#kufbgkawps .gt_center {
+#oroqpofzqe .gt_center {
   text-align: center;
 }
 
-#kufbgkawps .gt_right {
+#oroqpofzqe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kufbgkawps .gt_font_normal {
+#oroqpofzqe .gt_font_normal {
   font-weight: normal;
 }
 
-#kufbgkawps .gt_font_bold {
+#oroqpofzqe .gt_font_bold {
   font-weight: bold;
 }
 
-#kufbgkawps .gt_font_italic {
+#oroqpofzqe .gt_font_italic {
   font-style: italic;
 }
 
-#kufbgkawps .gt_super {
+#oroqpofzqe .gt_super {
   font-size: 65%;
 }
 
-#kufbgkawps .gt_footnote_marks {
+#oroqpofzqe .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kufbgkawps .gt_asterisk {
+#oroqpofzqe .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kufbgkawps .gt_indent_1 {
+#oroqpofzqe .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kufbgkawps .gt_indent_2 {
+#oroqpofzqe .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kufbgkawps .gt_indent_3 {
+#oroqpofzqe .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kufbgkawps .gt_indent_4 {
+#oroqpofzqe .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kufbgkawps .gt_indent_5 {
+#oroqpofzqe .gt_indent_5 {
   text-indent: 25px;
 }
 </style>

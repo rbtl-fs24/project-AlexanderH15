@@ -19,7 +19,7 @@ for (i in a) {
   litter_per_km[,i] <- litter_raw[,i] / litter_raw[,4] *1000
   
 }
-glimpse(litter_per_km)
+#glimpse(litter_per_km)
 
 
 #Pivot long
@@ -75,12 +75,6 @@ loc2 <- loc |>
   relocate(length) |> 
   relocate(street) 
 
-loc_mean <- loc2 |> 
-  group_by(street,length,notes) |> 
-  summarise(mean_mass = mean(mass),
-            mean_amount = mean(amount),
-            .groups = 'drop')
-
 write_csv(loc2, "data/final/location_overview.csv")
 
 
@@ -92,14 +86,6 @@ sec_z |>
   mutate(id=NULL,date=NULL,notes=NULL, distance_m=NULL)
 
 write_csv(sec_z, "data/final/section_comparison.csv")
-
-ggplot(data = sec_z, mapping = aes(x = location, 
-                                     y = mass, 
-                                   fill = waste_category)) + 
-  geom_bar(stat = "identity") + 
-  scale_color_colorblind() +
-  labs(title = "Title", x = "Street Section", y = "Mass [g/km]")
-
 
 
 
@@ -123,11 +109,5 @@ litter_mean <- litter_total2 |>
 
 write_csv(litter_mean, "data/final/total_analysis.csv")
 
-ggplot(data = litter_mean, mapping = aes(x = street, 
-                                   y = mean_mass, 
-                                   fill = waste_category)) + 
-  geom_bar(stat = "identity") + 
-  scale_color_colorblind() +
-  labs(title = "Title", x = "Street", y = "Mass [g/km]")
 
 

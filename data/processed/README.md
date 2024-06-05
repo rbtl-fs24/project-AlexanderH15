@@ -44,7 +44,7 @@
 
 4.  Standards and calibration information, if appropriate: -
 
-5.  Environmental/experimental conditions: recent rain
+5.  Environmental/experimental conditions: recent rain (paper sometimes wet -> heavier)
 
 6.  Describe any quality-assurance procedures performed on the data: 
 

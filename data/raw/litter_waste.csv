@@ -1,4 +1,4 @@
-id,location,date,distance_m,notes,paper_m_g,paper_n,plastic_m_g,plastic_n,glass_m_g,glass_n,metal_m_g,metal_n,organic_m_g,organic_n,textile_m_g,textile_n,zig_m_g,zig_n,total_m_g,total_n,total_m_g_measured
+id,location,date,distance_m,notes,paper_m_g,paper_n,plastic_m_g,plastic_n,glass_m_g,glass_n,metal_m_g,metal_n,organic_m_g,organic_n,textile_m_g,textile_n,cigarettes_m_g,cigarettes_n,total_m_g,total_n,total_m_g_measured
 1,Zürichstrasse1,2024-05-24T00:00:00Z,52,high grass,77,27,23,5,0,0,32,9,100,1,0,0,9,9,241,51,265
 2,Zürichstrasse2,2024-05-24T00:00:00Z,70,high grass,35,8,39,6,0,0,38,5,0,0,0,0,9,12,121,31,184
 3,Zürichstrasse3,2024-05-24T00:00:00Z,132,high grass,83,10,7,4,0,0,20,3,0,0,0,0,16,17,126,34,162

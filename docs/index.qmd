@@ -1,10 +1,6 @@
 ---
 title: "How does littered trash differ in amount and composition, when being picked up from the greeneries next to a rural road in the same day, comparing three sections with different vicinities to the city?"
-#output:
-#  html_document:
-#    toc: true
-#    theme: united
-    #number_sections: true
+
 date: today
 author:
   - name: Alexander Hüssy
@@ -25,15 +21,9 @@ bibliography: references.bib
 #| label: load-packages
 
 suppressMessages(library(tidyverse))
-#library(dplyr)
-#library(readr)
-#library(ggplot2)
-#library(tidyr)
-#library(tibble)
 library(ggthemes)
 library(ggridges)
 library(gt)
-#library(knitr)
 ```
 
 # Introduction
