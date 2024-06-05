@@ -1,5 +1,10 @@
 ---
 title: "How does littered trash differ in amount and composition, when being picked up from the greeneries next to a rural road in the same day, comparing three sections with different vicinities to the city?"
+#output:
+#  html_document:
+#    toc: true
+#    theme: united
+    #number_sections: true
 date: today
 author:
   - name: Alexander Hüssy
@@ -8,11 +13,10 @@ author:
     affiliation: 
       - name: ETH Zurich
         url: https://ethz.ch/de.html
-#format: html
-output: 
-  html_document:
+format:
+  html:
     toc: true
-    number_sections: true
+
 editor: visual
 bibliography: references.bib
 ---
@@ -20,21 +24,25 @@ bibliography: references.bib
 ```{r}
 #| label: load-packages
 
-library(dplyr)
-library(readr)
-library(ggplot2)
+suppressMessages(library(tidyverse))
+#library(dplyr)
+#library(readr)
+#library(ggplot2)
+#library(tidyr)
+#library(tibble)
 library(ggthemes)
 library(ggridges)
 library(gt)
+#library(knitr)
 ```
 
 # Introduction
 
-adfa
+Between villages and cities there are often rural roads, which are rarely frequented by pedestrians, but experience rather high amounts of car traffic. Usually these streets have a parallel running footway with green patches in between, and roughly one meter of grass on either side, bordering a field or forest. These patches can not be accessed by the usual road sweeping vehicle, so littered trash can only be removed from there by picking it up manually. Unlike the similar study by @rossi2023understanding, this case study focuses on this litter, an often forgotten area, where the solid waste collection system fails.
 
 # Methods
 
-adfasd
+To obtain the data the littered trash was picked manually using a simple grabber, and was afterwards counted and weighted with a kitchen scale. Parts of three rural streets were chosen, always with some distance to the closest settlement. They are all part of the same route, one would take to drive into Zürich city. @tbl-streets displays their data and noteworthy conditions. The streets were further divided into sections.
 
 ```{r}
 #| label: tbl-streets
@@ -61,7 +69,7 @@ loc2 |>
 
 # Results
 
-asdfasd
+@fig-sectionsA and @fig-sectionsB compare the mass and amount per km respectively in different sections of the same street, with the section "Zürichstrasse1" being closest to a village. This data agrees with the waste picker's suspicion, that closeness to a settlement correlates with the total amount of littered trash. However a clear outlier are cigarettes, which are roughly equally distributed everywhere (their pick-up-rate depends more on the accessibility, i.e. grass height).
 
 ```{r}
 #| fig-cap: Comparison of different Sections of the same Street
@@ -80,7 +88,7 @@ ggplot(data = sec_z, mapping = aes(x = location,
 
 ```{r}
 #| fig-cap: Comparison of different Sections of the same Street
-#| label: fig-sections_B
+#| label: fig-sectionsB
 
 
 ggplot(data = sec_z, mapping = aes(x = location, 
@@ -92,9 +100,11 @@ ggplot(data = sec_z, mapping = aes(x = location,
 
 ```
 
+Comparing the different streets (@fig-streetsA, @fig-streetsB) there is no clear correlation with closeness to the city or state of the grass (Zürichstrasse is the furthest and Wittikonerstrasse(Pfaffhausen) is the closest to Zürich city).
+
 ```{r}
 #| fig-cap: Comparison of different Streets
-#| label: fig-streets_A
+#| label: fig-streetsA
 
 litter_mean <- read_csv(here::here("data/final/total_analysis.csv"),show_col_types = FALSE)
 
@@ -109,7 +119,7 @@ ggplot(data = litter_mean, mapping = aes(x = street,
 
 ```{r}
 #| fig-cap: Comparison of different Streets
-#| label: fig-streets_B
+#| label: fig-streetsB
 
 ggplot(data = litter_mean, mapping = aes(x = street, 
                                    y = mean_amount, 
@@ -122,13 +132,8 @@ ggplot(data = litter_mean, mapping = aes(x = street,
 
 # Conclusions
 
-adsfa
+-   Similar to the findings of @schultz2013littering, the largest contributer (in numbers) is cigarettes
 
-# References
+-   Closeness to settlements usually entails more littering, but not necessarily closeness to major cities
 
-adsfsd
-
-```{r}
-
-
-```
+-   Trash in the green patches between streets need to be collected manually, perhaps with a system proposed by @powers1973positive

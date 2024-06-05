@@ -2,15 +2,15 @@
 
 ## General information
 
-1.  Title of Dataset:  
+1.  Title of Dataset: How does littered trash differ in amount and composition, when being picked up from the greeneries next to a rural road in the same day, comparing three sections with different vicinities to the city?
 
-2.  Author Information
+2.  Research beyond the Lab, course participant
 
 **Author A**
 
 - First name: Alexander
 - Surname: Hüssy
-- ORCID iD
+- ORCID iD: 0009-0007-7656-117X
 - Email: huessya@student.ethz.ch
 
 
@@ -23,9 +23,7 @@
 
 ## Sharing / access information
 
-1.  Licenses/restrictions placed on the data:  
-
-Recommended: This work is licensed under the Creative Commons Attribution 4.0 International license (CC-BY-4.0).
+1.  Licenses/restrictions placed on the data: This work is licensed under the Creative Commons Attribution 4.0 International license (CC-BY-4.0).
 
 2.  Links to publications that cite or use the data: 
 
