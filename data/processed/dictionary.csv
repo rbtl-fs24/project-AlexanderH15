@@ -5,5 +5,5 @@ distance,lenght of street section
 date,date of collection
 notes,information; which might influence the data interpretation
 waste_category,material of individual pieces
-mass,mass of individual pieces
-amount,number of individual pieces
+mass,mass of individual pieces in gramms per kilometer
+amount,number of individual pieces in number per kilometer
